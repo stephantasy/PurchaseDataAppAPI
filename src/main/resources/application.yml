@@ -1,0 +1,22 @@
+#Port
+server:
+  port: 8081
+
+#Color
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+
+  #JPA
+  jpa:
+    database-platfrom: org.hibernate.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+  datasource:
+    url: jdbc:sqlite:bike.db
+    username: ""
+    password: ""
+    driver-class-name: org.sqlite.JDBC
